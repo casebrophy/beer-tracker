@@ -1,0 +1,10 @@
+extends layout
+
+block layout-content
+    div.View.UserView
+        h1.Banner Howdy! Please login.
+        div.Login
+            form(action='auth' method='POST')
+                input(type='text' name='username' placeholder='ID' required='')
+                input(type='password' name='password' placeholder='Password' required='')
+                input(type='submit')
